@@ -1,29 +1,35 @@
-class Demo
+ abstract class Demo
 {
- public static void main()
- {
-   //StringBuffer[] sarr;
-   //String[] sarr;
-   //sarr = new StringBuffer[5];
-    
-   String[] sarr={"onkar","pradip","ganesh","affan","durgesh"};
-  /* sarr[0]=StringBuffer("onkar");
-   sarr[1]=StringBuffer("pradip");
-   sarr[2]=StringBuffer("ganesh");
-   sarr[3]=StringBuffer("affan");
-   sarr[4]=StringBuffer("durgesh");*/
-   
-   int i;
-   for(i=0;i < arr.length;i++)
+  abstract void gun();
+  {
+	  
+  }	
+  abstract void fun();
+   Demo()
    {
-	   StringBuffer sb=new StringBuffer();
-	   sb=sb.reverse();
-	   
-	   String s=new String(sb));
-	  if(arr[i]= equals(s))
-	  {
-		 System.out.println(arr[i]);
-	  }   
-   }
-  }
+	   System.out.println("constaructor");
+   }   
 }
+   class Test extends Demo
+  {
+    void gun()
+	{
+		System.out.println("gun");
+	}
+    
+	void fun()
+	{
+	  System.out.println("void gun");
+	}
+  
+
+   public static void main(String []args)
+   {
+	 Demo d=new Test();
+	 d.gun();
+	 d.fun();
+	//Demo d=new Demo();
+	// d.gun();
+   } 
+  }   
+
