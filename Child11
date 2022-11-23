@@ -1,0 +1,22 @@
+class child10 extends Parent10
+{
+
+  void get() //get method
+  {
+	 System.out.println("data="+c.a);
+	 System.out.println("data="+c.b);
+	 System.out.println("data="+c.b);
+	  
+	  
+  }
+  
+ public static void main(String args[])
+ {
+	 Child10 c= new Child10();
+	 c.get();//method calling
+	 
+	 
+ }
+
+
+}
