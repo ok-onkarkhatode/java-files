@@ -1,35 +1,34 @@
-class Demo extends Thread
+import java.lang.Integer;
+
+class Demo
 {
-   int i;
-   
-   public void run()
-   {
-	   int i=0;
-	   int sum=45;
-      for(int i=10;i>0;i--)
-	  {
-		  sum=sum+i;
-		  
-		  system.out.println(sum);
-		  
-	  }
-   }
-
-
-   public static void main(String []args)
-   {
-	   Demo d=new Demo()
-	   d.start();
-	   
-	   int i;
-	   int sum=0;
-	   
-	    for(i=10;i<12;i++)
-		{
-			
-			
-		}
-   
-   }
+  public static void main(String args[])
+  {
+	  //primitive to wrapper
+    Integer i=new Integer(10);
+	//System.out.println(i);
+	//System.out.println(i.valueOf(10));
+	//System.out.println(i.hashCode());
+	
+	//wrapper to primitive
+	//System.out.println(i.intValue());
+	//System.out.println(i.floatValue());
+	
+	//primitive to string 
+	//String y=Integer.toString(10);
+	//System.out.println(y);
+	
+	//string to primitive
+	//int a=Integer.parseInt("10");
+	//System.out.println(a);
+	
+	//string to wrapper object
+	Integer i=new Integer(10);
+	System.out.println(Integer.valueOf("20"));
+	System.out.println(i);
+	
+	//wrapper to string
+	Integer i=new Integer(100);
+  }
 
 }
