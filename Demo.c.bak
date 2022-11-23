@@ -1,0 +1,54 @@
+#include<stdio.h>
+
+struct Stack
+{
+ int *array;
+ int capacity;
+ int top;
+
+  int createStack(struct Stack** stack)
+  {
+    *stack =(struct stack*)malloc(size of(struct stack));
+	
+  }
+  
+  void push(struck Stack* stack)
+  {
+	int element;
+  printf("enter the element\n");
+  scanf("%d\n",&element);
+
+  
+	  
+  }
+  
+}
+
+void main()
+{
+  struck stack* stack=NULL;
+  createStack(&stack);
+  
+  ing choice;
+  
+  do()
+  {
+    printf("push\n");
+    printf("pop\n");
+    printf("peek\n
+	printf("display\n");
+	printf("exit\n");
+	
+	
+	case 1:push();
+	      break;
+	case 2:pop();
+	      break;
+	case 3:peek();
+	      break;
+	case 4:display();
+	      break;
+	case 0 EXIT(0);
+	
+  }
+}

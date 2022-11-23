@@ -1,69 +1,55 @@
 class Student
 {
- static String collegename="AVCOE";
- int rollno;
- String name;
- float percentage;
+  int rollNo;
+  String name;
+  float per;
  
- Student(int rollno,String name,float percentage)
- {
-	 this.rollno=rollno;
-	 this.name=name;
-	 this.percentage=percentage;
-	 
-	 
- }
+
+   Student(int rollNo,String name,float per)
+     {
+        this.rollNo=rollNo;
+        this.name=name;
+        this.per=per;       
+     }
+/*
+  public boolean equals(final Object obj) 
+    {
+        if(this == obj)
+            {
+
+              return true;
+            }
+        else if(obj instanceof Student)
+           {  Student s=(Student)obj;
+             if( this.name==s.name && this.per==s.per)
+                 {
+                   return true;
+
+                 }
+
+
+           }
+        else
+            {
+               return false;  
+
+            }
+        return false;
+    }*/
 
 }
 
-class Demo1
+
+class Test
 {
-	public static void main(String args[])
-	{
-		Student[] sarr={new Student(11,"onkar",75.60f),
-			            new Student(12,"ganesh",75.80f),
-						new Student(13,"pradip",60.90f),
-						new Student(14,"affan",55.70f),
-			
-			
-		                };
-						
-		 System.out.println(Student.collegename);
+   public static void main(String args[])
+      {
 
-        for(int i=0;i<sarr.length;i++)
-		{
-		  /*System.out.println(sarr[i].rollno);
-          System.out.println(sarr[i].name);
-          System.out.println(sarr[i].percentage);*/
-			
-			System.out.println(sarr[i].name+" "+sarr[i].rollno+" "+sarr[i].percentage);
-		}	
+       Student s1=new Student(40,"onkar",75);
+      // Student s2=new Student(40,"onkar",75);    
 
-          Student temp;
-         for(int i=0;i<((sarr.length) -1);i++)
-		 {
-			 for(int j=i+1;j<sarr.length;j++)
-			 {
-				 if(sarr[i].percentage < sarr[j].percentage)
-				 {
-					temp=sarr[i];
-					sarr[i]=sarr[j];
-					sarr[j]=temp;
-					 
-				 }
-				 
-			 }
-			 
-		 }	
-         System.out.println("sorted data:");		 
-		 for(int i=0;i<sarr.length;i++)
-		{
-		 /* System.out.println(sarr[i].rollno);
-          System.out.println(sarr[i].name);
-          System.out.println(sarr[i].percentage);	*/	  
-			
-			System.out.println(sarr[i].name+" "+sarr[i].rollno+" "+sarr[i].percentage);
-		}
-	}
-	
+      // System.out.println(s1.equals(s2));
+       System.out.println(s1.hashCode());
+
+     }
 }
