@@ -1,14 +1,35 @@
-class Demo
+class Demo extends Thread
 {
- public static void main(String args[])
- {
-   Demo d1=new Demo();
-   Demo d2=new Demo();
-   System.out.println(d1.toString());
-   System.out.println(d2);
- }
+   int i;
+   
+   public void run()
+   {
+	   int i=0;
+	   int sum=45;
+      for(int i=10;i>0;i--)
+	  {
+		  sum=sum+i;
+		  
+		  system.out.println(sum);
+		  
+	  }
+   }
+
+
+   public static void main(String []args)
+   {
+	   Demo d=new Demo()
+	   d.start();
+	   
+	   int i;
+	   int sum=0;
+	   
+	    for(i=10;i<12;i++)
+		{
+			
+			
+		}
+   
+   }
+
 }
-
-
-
-
